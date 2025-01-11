@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    box-shadow: 0px 0px 12px 2px #cccccc;
+    position: relative;
+}
+
+.header .header__top {
+    width: inherit;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ mờ */
+    backdrop-filter: blur(4px); /* Hiệu ứng làm mờ nền phía sau */
+    box-shadow: 0px 0px 12px 2px #ededed;
+    z-index: 10;
+}
+
+.header .header__top .link{
+    margin-left: 10px;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header__top .link img {
+    height: 90%;
+    transition: all .3s ease-in-out;
+}
+
+.header .header__top .list {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header .header__top .list .item {
+    padding: 0px 10px;
+    height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in;
+}
+
+.header .header__top .list .item .link {
+    margin: 0;
+}
+
+.header__top .link img:hover {
+    cursor: pointer;
+}
+
+.header .header__top .list .item:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.header .header__bottum {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .header__bottum img {
+    width: 100%;
+    margin-top: -100px;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.header .header__bottum .title {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.4); /* Nền trắng với độ mờ */
+    backdrop-filter: blur(1px); /* Hiệu ứng làm mờ nền phía sau */
+    padding: 15px;
+    border-radius: 10px;
+} 
+
+.header .header__bottum .title p {
+    font-size: 38px;
+    font-style: italic;
+}
+
+.header .header__bottum .title h2 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
