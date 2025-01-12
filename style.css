@@ -7,11 +7,11 @@
     list-style: none;
     color: inherit;
     text-decoration: none;
+    line-height: 1.6em;
 }
 
 .header {
     width: 100%;
-    box-shadow: 0px 0px 12px 2px #cccccc;
     position: relative;
 }
 
@@ -70,15 +70,14 @@
     background-color: #cccccc;
 }
 
-.header .header__bottum {
+.header .header__bottom {
     width: 100%;
     box-sizing: border-box;
     position: relative;
 }
 
-.header .header__bottum img {
+.header .header__bottom img {
     width: 100%;
-    margin-top: -100px;
     box-sizing: border-box;
     user-select: none;
     -webkit-user-select: none;
@@ -88,23 +87,67 @@
     object-position: center; 
 }
 
-.header .header__bottum .title {
+.header .header__bottom .title {
     position: absolute;
     top: 120px;
     left: 50px;
     user-select: none;
-    background-color: rgba(255, 255, 255, 0.4); /* Nền trắng với độ mờ */
-    backdrop-filter: blur(1px); /* Hiệu ứng làm mờ nền phía sau */
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(1px); 
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 0px 0px 12px 2px #cccccc;
 } 
 
-.header .header__bottum .title p {
+.header .header__bottom .title p {
     font-size: 38px;
     font-style: italic;
 }
 
-.header .header__bottum .title h2 {
+.header .header__bottom .title h2 {
     font-size: 64px;
     text-transform: uppercase;
+}
+
+.header .header__bottom .slogan {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transform: translateX(50%) translateY(-50%);
+    right: 50%;
+    border-radius: 15px 0px 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 2px #cccccc;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.header .header__bottom .slogan h2 {
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+}
+
+.content__history {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.content__history .title {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.content__history .decs {
+    margin-top: 40px;
+    text-indent: 40px;
+    text-align: justify;
 }
