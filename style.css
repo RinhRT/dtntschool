@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    line-height: 1.6em;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.header .header__top {
+    width: inherit;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ mờ */
+    backdrop-filter: blur(4px); /* Hiệu ứng làm mờ nền phía sau */
+    box-shadow: 0px 0px 12px 2px #ededed;
+    z-index: 10;
+}
+
+.header .header__top .link{
+    margin-left: 10px;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header__top .link img {
+    height: 90%;
+    transition: all .3s ease-in-out;
+}
+
+.header .header__top .list {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header .header__top .list .item {
+    padding: 0px 10px;
+    height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in;
+}
+
+.header .header__top .list .item .link {
+    margin: 0;
+}
+
+.header__top .link img:hover {
+    cursor: pointer;
+}
+
+.header .header__top .list .item:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+
+.header .header__bottom {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header .header__bottom img {
+    width: 100%;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.header .header__bottom .title {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(1px); 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 2px #cccccc;
+} 
+
+.header .header__bottom .title p {
+    font-size: 38px;
+    font-style: italic;
+}
+
+.header .header__bottom .title h2 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.header .header__bottom .slogan {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transform: translateX(50%) translateY(-50%);
+    right: 50%;
+    border-radius: 15px 0px 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 2px #cccccc;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.header .header__bottom .slogan h2 {
+    font-size: 32px;
+    text-align: center;
+    font-style: italic;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+}
+
+.content__history {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.content__history .title,
+.achievements .title {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.content__history .decs {
+    margin-top: 40px;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.list-item {
+    width: 100%;
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 12px 2px #cccccc;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.list-item .item {
+    width: 50%;
+    height: 400px;
+    padding: -10px;
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+}
+
+.list-item .item:first-child {
+    border-radius: 20px 0px 20px 0px;
+}
+
+.list-item .item:last-child {
+    border-radius: 0px 20px 0px 20px;
+}
+
+.list-item .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.achievements {
+    width: 100%;
+    color: white;
+    background-color: #000000;
+    padding: 120px 0;
+}
+
+.achievements .list-image {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.highLight {
+    background: linear-gradient(45deg, #ffd000, #ff6f00); /* Gradient từ vàng sang cam theo góc 45 độ */
+    padding: 5px;
+    color: #000000;
+    border-radius: 10px 0 10px 0;
+    margin: 0 -5px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.achievements .list-image .item {
+    position: relative;
+    width: 580px;
+    height: 450px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    filter: grayscale(1);
+}
+
+.achievements .list-image .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.achievements .list-image .item:hover {
+    cursor: pointer;
+    transform: scale(.991);
+    filter: grayscale(0);
+}
+
+.achievements .list-image .sub {
+    transition: all .3s ease-in-out;
+}
+
+.achievements .list-image .item:hover .sub h1 {
+    font-size: 20px;
+}
+
+.achievements .list-image .item:hover .sub {
+    text-align: center;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    display: block;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(1px);
+    padding: 5px;
+    border-radius: 10px;
+}
