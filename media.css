@@ -137,11 +137,12 @@
         display: block;
         border-radius: 0;
         padding: 10px 0;
+        box-sizing: border-box;
     }
     
     .list-item .item {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
         padding: -10px;
         margin: 10px;
         overflow: hidden;
