@@ -170,8 +170,8 @@
 
     .achievements .list-image .item {
         position: relative;
-        width: 580px;
-        height: 450px;
+        width: 500px;
+        height: 350px;
         border-radius: 15px;
         overflow: hidden;
         transition: all .3s ease-in-out;
